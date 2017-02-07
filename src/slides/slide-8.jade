@@ -1,0 +1,27 @@
+section
+	img(src="./img/experiment/icon_config.png", alt="", style="border: 0; box-shadow: none; max-width: 70%; max-height: 70%; margin: 3%;")
+	img(src="./img/experiment/icon_dashboard.png", alt="", style="border: 0; box-shadow: none; max-width: 70%; max-height: 70%; margin: 3%;")
+	br
+	pre
+		code
+			|.icon_img { transition: .5s ease-in-out; }
+			|.icon_config:hover {
+			|   background-image: url('./img/experiment/icon_config_azul.png');
+			|}
+			|.icon_dashboard:hover {
+			|   background-image: url('./img/experiment/icon_dashboard_azul.png');
+			|}
+	br
+	style
+		| .icon_img { transition: .5s ease-in-out; }
+		| .icon_config:hover { background-image: url('./img/experiment/icon_config_azul.png') !important; }
+		| .icon_dashboard:hover { background-image: url('./img/experiment/icon_dashboard_azulaa.png') !important; }
+	div
+		button(class="icon_config icon_img",style="background-image: url('./img/experiment/icon_config.png'); background-size: contain; background-repeat: no-repeat; background-position: center;")
+			img(src="./img/experiment/icon_config_azul.png", alt="", style="border: 0; box-shadow: none; max-width: 70%; max-height: 70%; margin: 3%; opacity: 0;")
+		
+		button(class="icon_dashboard icon_img",style="background-image: url('./img/experiment/icon_dashboard.png'); background-size: contain; background-repeat: no-repeat; background-position: center;")
+			img(src="./img/experiment/icon_config_azul.png", alt="", style="border: 0; box-shadow: none; max-width: 70%; max-height: 70%; margin: 3%; opacity: 0;")
+
+		//- img(src="./img/experiment/icon_config.png", alt="", style="border: 0; box-shadow: none; max-width: 20%; max-height: 20%; width: 120%; width: 120%; background: none; margin: 3%;")
+		//- img(src="./img/experiment/icon_dashboard.png", alt="", style="border: 0; box-shadow: none; max-width: 20%; max-height: 20%; width: 120%; width: 120%; background: none; margin: 3%;")
