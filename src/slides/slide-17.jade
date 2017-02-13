@@ -1,23 +1,20 @@
 section
 	h2 Animando
 
-	style .icon_storm { transform: translateX(0px); animation-name: cloud_move; animation-duration: 2s; animation-direction: alternate; animation-iteration-count: infinite; } .icon_storm .thunder { transform: translateX(0px); animation-name: thunder_move; animation-duration: .5s; animation-direction: alternate; animation-iteration-count: infinite; }
-	
-	style(style="display: block;" contenteditable="true") @keyframes thunder_move { 0% { transform: translate3d(0px, 10px, 0); fill: ; } 100% { transform: translate3d(10px, -10px, 0); fill: ; } }
-	
-	br
-	
+	style .icon_storm { transform: translateX(0px); animation-name: cresce_nuvem; animation-duration: 2s; animation-direction: alternate; animation-iteration-count: infinite; } .icon_storm .thunder { transform: translateX(0px); animation-name: trovejar; animation-duration: .5s; animation-direction: alternate; animation-iteration-count: infinite; }
 
-	style(style="display: block;" contenteditable="true")
-		|@keyframes cloud_move {
-		|	0% {
-		|		transform: scale(1.0001);
-		|		fill: ;
-		|	}
-		|	100% {
-		|		transform: scale(.8);
-		|		fill: ;
-		|	}
+	style(style="display: block; white-space: pre; font-size: 20px; text-align:left; float:left;" contenteditable="true")
+		|@keyframes trovejar {
+		|	0% { fill: ; transform: translate3d(0px, 10px, 0); }
+		|	100% { fill: ; transform: translate3d(10px, -10px, 0); }
+		|}
+	br
+
+
+	style(style="display: block; white-space: pre; font-size: 20px; text-align:left; float:left;" contenteditable="true")
+		|@keyframes cresce_nuvem {
+		|	0% { fill: ; transform: scale(1.0001); }
+		|	100% { fill: ; transform: scale(.8); }
 		|}
 
 
