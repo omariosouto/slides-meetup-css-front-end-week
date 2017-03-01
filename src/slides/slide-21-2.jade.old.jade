@@ -1,0 +1,35 @@
+section
+	style
+		|.pull-left { float: left; }
+		|.icon { margin: 15px !important; display: inline-block; width: 50px; height: 50px; background-image: url('./img/social-network-sprite.png'); background-size: 1500px; background-position: 481px;}
+		|.icon-facebook { background-position: 441px 441px; }
+		|.icon-twitter { background-position: 441px 441px; }
+		|.icon-gplus { background-position: 441px 441px; }
+
+	h3 Tudo são coordenadas
+
+	pre
+		code
+			|.icon { background-image: url('./img/social-network-sprite.png'); }
+			|.icon-facebook { background-position: 441px 441px; }
+			|.icon-twitter { background-position: 541px 541px; }
+			|.icon-gplus { background-position: 641px 641px; }
+	pre
+		code
+			<a class="icon-facebook icon">Facebook</a>
+			<a class="icon-twitter icon">Twitter</a>
+			<a class="icon-gplus icon">Google Plus</a>
+
+
+
+	div(style="text-align: center;")
+		//a.icon-facebook.icon
+		//a.icon-twitter.icon
+		//a.icon-gplus.icon
+		<i class="fa fa-facebook" style="font-size: 4rem !important;" aria-hidden="true"></i>
+		<i class="fa fa-twitter" style="font-size: 4rem !important;" aria-hidden="true"></i>
+		<i class="fa fa-google" style="font-size: 4rem !important;" aria-hidden="true"></i>	
+
+	br
+
+	h5 Que não são claras
