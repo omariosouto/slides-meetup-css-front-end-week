@@ -1,0 +1,37 @@
+section
+	style
+		|.pull-left { float: left; }
+		|.icon { margin: 15px !important; display: inline-block; width: 50px; height: 50px; background-image: url('./img/social-network-sprite.png'); background-size: 1500px; background-position: 481px;}
+		|.icon-facebook { background-position: 441px 441px; }
+		|.icon-twitter { background-position: 441px 441px; }
+		|.icon-gplus { background-position: 441px 441px; }
+		|.sprite-move-example-container { -webkit-animation: movecsssprite_base 5s infinite; animation: movecsssprite_base 5s infinite alternate; }
+		|.sprite-move-example-container { margin: auto !important; max-width: 600px; background-image: url('./img/experiment/icon-sprite-css-opacity.jpg'); background-repeat: no-repeat; background-position: -15px -15px; }
+		|.sprite-move-example { -webkit-animation: movecsssprite 5s infinite; animation: movecsssprite 5s infinite alternate; }
+		|.sprite-move-example { background-image: url('./img/experiment/icon-sprite-css.jpg'); background-position: -15px -15px; width: 100px; height: 100px; color: red; margin: 0 !important; display: block; }
+
+
+	h3 Tudo são coordenadas
+
+	div.sprite-move-example-container
+		div.sprite-move-example
+
+	img(src="./img/experiment/icon-sprite-css.jpg" style="margin-left: -45px !important; border: 0; box-shadow: none;")
+
+	style(contenteditable="true" style="display: block; white-space: pre; font-size: 24px; text-align: left !important;")
+		|@keyframes movecsssprite {
+		|	20% { background-position: -15px -15px; }
+		|	40% { background-position: -130px -15px; }
+		|	60% { background-position: -245px -15px; }
+		|	80% { background-position: -360px -15px; }
+		|	100% { background-position: -475px -15px; }
+		|}
+
+	style(contenteditable="true" style="white-space: pre; font-size: 24px; text-align: left !important;")
+		|@keyframes movecsssprite_base {
+		|	20% { background-position: -15px -15px; }
+		|	40% { background-position: -130px -15px; }
+		|	60% { background-position: -245px -15px; }
+		|	80% { background-position: -360px -15px; }
+		|	100% { background-position: -475px -15px; }
+		|}
