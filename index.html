@@ -45,10 +45,10 @@
         <section data-background-image="./img/04/comopostar-02.png"></section>
         <section data-background-image="./img/04/comopostar-03.png"></section>
         <section data-background-image="./img/04/comopostar-04.png"></section>
-        <section data-background-image="./img/04/comopostar-05.png"></section>
         <section data-background-image="./img/04/comopostar-05.png">
           <h2>Como deixar isso mais simples?</h2>
         </section>
+        <!--include ../slides/slide-2-7-->
         <section></section>
         <section data-background-image="./img/dashboard.png" data-background-size="contain" data-background-color="#1976d2"></section>
         <section>
@@ -128,9 +128,6 @@
         <section data-background-image="./img/como-salvar/illustrator.png" data-background-size="contain"></section>
         <section data-background-image="./img/como-salvar/inkscape.png" data-background-size="contain"></section>
         <section>
-          <h2>Compabitilidade</h2><img src="./img/caniuse-svg.png">
-        </section>
-        <section>
           <h2>Resolvendo nosso problema</h2>
           <pre><code><svg class="quadro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325.6 325.6">
 	<path class="nuvem" d="M213.8 223.6h45.8c36.4 0 66-29.6 66-66 0-19.8-8.6-38.1-23.8-50.7.5-3.9.8-7.5.8-11.1 0-49.1-40-89.1-89.1-89.1-29.4 0-57 14.8-73.5 38.9-8.3-4.3-17.5-6.5-26.9-6.5-30.5 0-55.6 23.4-58.5 53.3C23.1 97.9 0 125 0 157.6c0 36.4 29.6 66 66.1 66h62.2m131.3-12.8H66.1c-29.3 0-53.2-23.9-53.2-53.2 0-27.8 20.9-50.5 48.5-52.9l5.9-.8V98c0-25.3 20.6-45.9 45.9-45.9 9.1 0 17.9 2.7 25.4 7.7l5.7 3.8 3.4-5.9c13.6-23.4 38.9-38 65.9-38 42 0 76.2 34.2 76.2 76.2 0 4-.4 8.1-1.2 12.7l-.7 3.9 3.2 2.3c13.8 10.2 21.7 25.7 21.7 42.7 0 29.4-23.9 53.3-53.2 53.3z" fill="#E0E0E0"/>
@@ -153,6 +150,9 @@
           </div>
         </section>
         <section>
+          <h2>Compabitilidade</h2><img src="./img/caniuse-svg.png">
+        </section>
+        <section>
           <h2>Animando</h2>
           <style>.icon_storm { transform: translateX(0px); animation-name: cresce_nuvem; animation-duration: 2s; animation-direction: alternate; animation-iteration-count: infinite; } .icon_storm .thunder { transform: translateX(0px); animation-name: trovejar; animation-duration: .5s; animation-direction: alternate; animation-iteration-count: infinite; }</style>
           <style style="display: block; white-space: pre; font-size: 20px; text-align:left; float:left; width: 50%;" contenteditable="true">
@@ -161,11 +161,14 @@
             	100% { fill: ;       transform: translate3d(10px, -10px, 0); }
             }
             @keyframes cresce_nuvem {
-            	0% { fill: ;            transform: scale(1.0001); }
-            	100% { fill: ;       transform: scale(.8); }
+            	0% {   transform: scale(1.0001); }
+            	100% { transform: scale(.8); }
             }
           </style>
           <div><svg class="icon_storm" style="max-width: 15vw; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325.6 325.6"><path class="cloud" d="M213.8 223.6h45.8c36.4 0 66-29.6 66-66 0-19.8-8.6-38.1-23.8-50.7.5-3.9.8-7.5.8-11.1 0-49.1-40-89.1-89.1-89.1-29.4 0-57 14.8-73.5 38.9-8.3-4.3-17.5-6.5-26.9-6.5-30.5 0-55.6 23.4-58.5 53.3C23.1 97.9 0 125 0 157.6c0 36.4 29.6 66 66.1 66h62.2m131.3-12.8H66.1c-29.3 0-53.2-23.9-53.2-53.2 0-27.8 20.9-50.5 48.5-52.9l5.9-.8V98c0-25.3 20.6-45.9 45.9-45.9 9.1 0 17.9 2.7 25.4 7.7l5.7 3.8 3.4-5.9c13.6-23.4 38.9-38 65.9-38 42 0 76.2 34.2 76.2 76.2 0 4-.4 8.1-1.2 12.7l-.7 3.9 3.2 2.3c13.8 10.2 21.7 25.7 21.7 42.7 0 29.4-23.9 53.3-53.2 53.3z" fill="#E0E0E0"/><path class="thunder" fill="#FBC02D" d="M185.8 228.6H140l-20.1 38.3h40.8l-26.8 57 75.9-71.2-40.6.1"/></svg></div>
+        </section>
+        <section>
+          <h3>E se eu quiser ver meu gráfico de acessos em tempo real? </h3>
         </section>
         <section>
           <h2>Desenhando</h2>
@@ -247,12 +250,8 @@
 	</a>
 </li></code></pre>
         </section>
-        <section>
-          <h3>E se eu precisar reutilizar esses ícones em uma nova página?</h3>
-        </section>
-        <section>
-          <h2>DRY</h2>
-          <p><i>Don't Repeat Yourself</i></p>
+        <section data-background-image="./img/dashboard-repetida.png" data-background-size="contain">
+          <h3>E se eu precisar reutilizar esses ícones?</h3>
         </section>
         <section data-background-image="./img/manage-icons.jpg" data-background-color="#212121" data-background-size="contain" data-background-position="center top">
           <pre><code><li>
@@ -341,6 +340,10 @@
 </li></code></pre>
         </section>
         <section>
+          <h2>DRY</h2>
+          <p><i>Don't Repeat Yourself</i></p>
+        </section>
+        <section>
           <h2>Lindo, mas como não repetir ícones?</h2>
         </section>
         <section data-background-image="./img/css-sprites-pokemon.png">
@@ -363,16 +366,16 @@
             .sprite-move-example { background-image: url('./img/experiment/icon-sprite-css.jpg'); background-position: -15px -15px; width: 100px; height: 100px; color: red; margin: 0 !important; display: block; }
           </style>
           <h3>Tudo são coordenadas</h3>
-          <div class="sprite-move-example-container">
+          <div style="background-color: #000;" class="sprite-move-example-container">
             <div class="sprite-move-example"></div>
-          </div><img src="./img/experiment/icon-sprite-css.jpg" style="margin-left: -45px !important; border: 0; box-shadow: none;">
+          </div><img src="./img/experiment/icon-sprite-css-old.jpg" style="margin-left: -45px !important; border: 0; box-shadow: none;">
           <style contenteditable="true" style="display: block; white-space: pre; font-size: 24px; text-align: left !important;">
             @keyframes movecsssprite {
-            	20% { background-position: -15px -15px; }
-            	40% { background-position: -130px -15px; }
-            	60% { background-position: -245px -15px; }
-            	80% { background-position: -360px -15px; }
-            	100% { background-position: -475px -15px; }
+            	20% { background-position: -15px -15px; } /* Facebook */
+            	40% { background-position: -130px -15px; } /* Twitter */
+            	60% { background-position: -245px -15px; } /* Telegram */
+            	80% { background-position: -360px -15px; } /* Google+ */
+            	100% { background-position: -475px -15px; } /* YouTube */
             }
           </style>
           <style contenteditable="true" style="white-space: pre; font-size: 24px; text-align: left !important;">
@@ -417,18 +420,75 @@
           <h2>Biblioteca de Symbols</h2>
         </section>
         <section>
-          <h3>Symbol</h3>
-          <pre><code><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <symbol id="icon_add" viewBox="0 0 24 24">
-     <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-     <path d="M0 0h24v24H0z" fill="none"/>
+          <h3>SVG Puro</h3>
+          <pre><code><svg id="icon_add">
+   <path class="tracado--01" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+   <path class="tracado--02" d="M0 0h24v24H0z" fill="none"/>
+</svg></code></pre>
+        </section>
+        <section>
+          <h3>Dois SVGs Puros</h3>
+          <pre><code><svg id="icon_add">
+   <path class="tracado--01" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+   <path class="tracado--02" d="M0 0h24v24H0z" fill="none"/>
+</svg>
+<svg id="icon_post">
+   <path class="tracado--01" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+   <path class="tracado--02" d="M0 0h24v24H0z" fill="none"/>
+</svg></code></pre>
+        </section>
+        <section>
+          <h3>E se eu agrupasse eles?</h3>
+        </section>
+        <section>
+          <h3>SVG Megazord</h3>
+          <pre><code><svg id="megazord_svg">
+   <path id="icon_add" class="tracado--01" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+   <path id="icon_add" class="tracado--02" d="M0 0h24v24H0z" fill="none"/>
+ 
+   <path id="icon_post" class="tracado--01" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+   <path id="icon_post" class="tracado--02" d="M0 0h24v24H0z" fill="none"/>
+</svg></code></pre>
+        </section>
+        <section>
+          <h3>Vamos organizar isso</h3>
+          <pre><code><svg id="ex-megazord-svg">
+  <svg id="icon_add">
+     <path class="tracado--01" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+     <path class="tracado--02" d="M0 0h24v24H0z" fill="none"/>
+  </svg>
+  <svg id="icon_post">
+     <path class="tracado--01" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+     <path class="tracado--02" d="M0 0h24v24H0z" fill="none"/>
+  </svg>
+</svg></code></pre>
+        </section>
+        <section>
+          <h3>Cada "svg" interno de abertura e fechamento, agora é um "symbol"</h3>
+          <pre><code><svg id="ex-megazord-svg">
+  <symbol id="icon_add"> <!--1°-->
+     <path class="tracado--01" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+     <path class="tracado--02" d="M0 0h24v24H0z" fill="none"/>
+  </symbol>
+  <symbol id="icon_post"> <!--2°-->
+     <path class="tracado--01" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+     <path class="tracado--02" d="M0 0h24v24H0z" fill="none"/>
   </symbol>
 </svg></code></pre>
-          <h3>SVG Puro</h3>
-          <pre><code><svg class="icon_add" fill="#000000" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg">
-   <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-   <path d="M0 0h24v24H0z" fill="none"/>
+        </section>
+        <section>
+          <h3>Symbol</h3>
+          <pre><code><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol id="icon_add" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
 </svg></code></pre>
+          <pre><code><svg>
+  <use xlink:href="#icon_add"/>
+</svg></code></pre>
+          <div>
+            <svg>
+              <use xlink:href="#icon_add"/>
+            </svg>
+          </div>
         </section>
         <section>
           <h3>Symbol</h3>
@@ -437,8 +497,44 @@
   <symbol id="icon_page" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
   <symbol id="icon_share" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
 </svg></code></pre>
-          <pre><code><svg><use xlink:href="#icon_add" x="" y=""/></svg></code></pre>
-          <div><svg><use xlink:href="#icon_add" x="" y=""/></svg><svg><use xlink:href="#icon_page" x="" y=""/></svg><svg><use xlink:href="#icon_share" x="" y=""/></svg></div>
+          <pre><code><svg><use xlink:href="#icon_add"/></svg></code></pre>
+          <div><svg><use xlink:href="#icon_add"/></svg><svg><use xlink:href="#icon_page"/></svg><svg><use xlink:href="#icon_share"/></svg></div>
+        </section>
+        <section>
+          <h3>Symbol</h3>
+          <pre><code><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol id="icon_add" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_page" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_share" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_painel" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_facebook" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_twitter" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_linkedin" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_home" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_tv" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_screen" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_mobile" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_off" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_car" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_dog" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_tablet" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_table" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_office" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_person" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_telegram" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_bluetooth" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_movies" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_ticket" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_play" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_game" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_control" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_sound" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+  <symbol id="icon_plus" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/></symbol>
+</svg></code></pre>
+          <div><svg><use xlink:href="#icon_add"/></svg><svg><use xlink:href="#icon_page"/></svg><svg><use xlink:href="#icon_share"/></svg></div>
+        </section>
+        <section>
+          <h3>Vai querer fazer isso na mão?</h3>
         </section>
         <section data-background-image="./img/iconico-svg-github.jpg">
           <h2>Iconico SVG</h2>
@@ -458,6 +554,10 @@
         </section>
         <section>
           <h2>Obrigado!</h2>
+        </section>
+        <section data-background-image="./img/premio-abradi-sp.jpg" data-background-size="contain">
+          <p><a href="https://goo.gl/7klWob" target="_blank" style="background-color: #FFF; padding: 10px; border: 5px solid orange !important;">https://goo.gl/7klWob</a></p>
+          <p><a href="https://goo.gl/7klWob" target="_blank"><img src="https://chart.googleapis.com/chart?cht=qr&amp;chs=500x500&amp;choe=UTF-8&amp;chld=H&amp;chl=https://goo.gl/7klWob" style="background-color: #FFF; padding: 10px; border: 5px solid orange !important;"></a></p>
         </section>
       </div>
     </div>
